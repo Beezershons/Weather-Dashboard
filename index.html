@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- header with title -->
+    <header>
+        <section class="hero is-dark">
+            <div class="hero-body">
+                <h1 class="title is-2 has-text-centered">Weather Dashboard</h1>
+            </div>
+        </section>
+    </header>
+
+
+    <!-- search sidebar with recently searched cities-->
+    <div class="columns">
+
+        <aside class="column is-3">
+            <form class="container">
+                <div class="notification is-light p-0">
+                    <div class="p-5">
+                        <!-- input label -->
+                        <p class="title is-4 mb-2 has-text-centered">City Search</p>
+                        <label alt="Search for a city"></label>
+                        <!-- input field -->
+                        <input id="input" class="fontAwesome input is-dark is-rounded has-text-centered" type="text"
+                            placeholder="&#xf002" type="text">
+                        <!-- submit button -->
+                        <input class="button is-dark is-medium is-rounded m-2" id="submit-btn" type="submit">
+                    </div>
+                    <!-- search history -->
+                    <div>
+                        <div id="search-history"></div>
+                        <div id="clear-history" class="searched-cities-btn button is-dark"> Clear Searches </div>
+                    </div>
+                </div>
+            </form>
+        </aside>
+
+        <!-- weather forecasts -->
+        <div class="column is-9">
+
+            <!-- current weather -->
+            <section class="container is-fluid">
+                <h2 class="title is-4 mt-5 mr-2 mb-2" id="city-name">Current Forecast</h2>
+                <div id="current-weather" class="notification is-light mt-3 has-text-centered">
+                </div>
+            </section>
+
+            <!-- future weather -->
+            <section class="container is-fluid">
+                <h2 class="title is-4 mt-4 mr-2 mb-2">Future Forecast</h2>
+                <div id="five-day-forecast" class="five-day-card has-text-centered">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer></footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

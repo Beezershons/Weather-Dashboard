@@ -1,0 +1,73 @@
+/* sets colors and font to call back to */
+* {
+    font-family: 'Rubik', sans-serif;
+    --lightblue: hsl(203, 100%, 68%);
+    --white: hsl(0, 0%, 96%);
+    --gray: hsl(0, 0%, 21%);
+
+}
+
+/* imports css from bulma */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* styles the footer of the body */
+body,footer {
+    background-color: var(--white);
+    min-height: 100%;
+}
+
+/* styles the footer */
+footer {
+    background-color: var(--white);
+    height: 300px;
+}
+
+/* styles the aside content */
+aside {
+    text-align: center;
+} 
+
+/* styles the search bar area*/
+#input, .searched-cities-btn {
+    width: 90%;
+    margin: 0.5rem;
+} 
+/* styles the submit button */
+#submit-btn, .searched-cities-btn {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+}
+/* styles the current weather section */
+#current-weather {
+    border: 1px solid transparent;
+    background-color: var(--lightblue);
+    color: var(--gray);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* styles the 5 other weather day card sections */
+.five-day-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    width: auto;
+}
+
+/* styles the 5 other weather day sections*/
+.five-day-text {
+    background-color: var(--lightblue);
+    border: 1px solid transparent;
+    color: var(--gray);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+    min-width: 225px;
+}
+/* creates a class for FontAwsome  */
+.fontAwesome {
+    font-family: 'Rubik', sans-serif;
+    }
